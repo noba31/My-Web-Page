@@ -1,0 +1,172 @@
+/* 
+	CS 6314.001: Web Programming Languages
+	Assignment 1 (Spring 2019)
+	02.03.2019
+	Author: Noumika Balaji (nxb170830)
+	HTML file: index.html
+	CSS file: index.css
+ */
+
+ * {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    background-color: #1B3409;
+    margin: 0px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+hr {
+    height: 1px;
+    color: grey;
+    border: thick;
+}
+
+.container-fluid {
+    height: 100%;
+    margin: 0px;
+}
+
+.navbar {
+    width: 100%; 
+    text-align: center; 
+    float: left; 
+    font-size: 18px;
+    padding: 2px;
+    background-color: black;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.myNavbar a:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.navbar a:active {
+    background: gainsboro;
+    color: black;
+}
+
+.active {
+    background-color: gainsboro;
+    color: black;
+}
+
+.navigbar:active {
+    background: gainsboro;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    border-right: 1px solid #eee;
+    background-color: #1B3409;
+    color: white;
+    float: left;
+    margin-bottom: 50px;
+    height: 400%;
+}
+
+.sidebar a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #EBF7E3;
+    color: #1B3409;    
+}
+
+.sidenavright {
+    position: fixed;
+    float: right;
+    margin-bottom: 50px;
+    height: 400%;
+    background-color: #1B3409;
+    color: white;
+}
+
+.sidenavright a {
+    display: block;
+}
+
+.footer {
+    background-color:#282828;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: block;
+    color: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.maincolumn {
+    overflow: auto;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+p.clear {
+    clear: both;
+}
+
+.links {
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.links a {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.links a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.about {
+    text-align: justify;
+}
+
+.row {
+    height: 100%;
+}

@@ -1,0 +1,194 @@
+<!-- 
+	CS 6314.001: Web Programming Languages
+	Assignment 1 (Spring 2019)
+	02.03.2019
+	Author: Noumika Balaji (nxb170830)
+	HTML file: index.html
+	CSS file: index.css
+ -->
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <!-- Title of the homepage -->
+        <title>Noumika's Homepage</title>
+        <meta charset="utf-8">
+        <!-- <meta> : Description of the web page -->
+        <meta name = "author" content = "Noumika Balaji">
+        <meta name = "description" content = "Personal Homepage">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta> : Keywords associated with my homepage -->
+        <meta name = "keywords" content = "HTML, Bootstrap, About, Home, Projects, Contact, Certifications, Noumika, Balaji">
+        <!-- Favorite icon -->
+        <link rel = "icon" href = "img/favicon.jpg" type = "image/jpg" sizes    = "16x16">
+        <!-- CSS and JavaScript files -->
+        <link rel = "stylesheet" type = "text/css" href = "index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Element 1: Navigation bar (Header)  -->
+        <nav class = "navbar navbar-inverse navbar-static-top" style = "margin: auto;">
+            <div class = "container-fluid">
+                <div class = "collapse navbar-collapse">
+                    <ul class = "nav navbar-nav" id = "myNavbar">
+                        <li class = "active"><a href = "#home">Home</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#projects">Projects</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Element 2: Left column, Main column, Right column -->
+        <div class = "container-fluid">
+            <div class = "row">
+                <!-- Left column -->
+                <div class = "col-sm-2 sidebar" id = "sidebar">
+                    <h2 style = "text-align: center; padding: 10px;">Let's Connect!</h2>
+                    <ul class = "nav links">
+                        <li>
+                            <h4 style = "padding-bottom: 10px;"><a href = "https://www.linkedin.com/in/noumikabalaji" target = "_blank">LinkedIn</a></h4>    
+                        </li>
+                        <li>
+                            <h4 style = "padding-bottom: 10px;"><a href = "https://twitter.com/noumika_balaji" target = "_blank">Twitter</a></h4>
+                        </li>
+                        <li>
+                            <h4 style = "padding-bottom: 10px;"><a href = "https://github.com/noba31" target = "_blank">GitHub</a></h4>
+                        </li>
+                        <li>
+                            <h4 style = "padding-bottom: 10px;"><a href = "https://bitbucket.org/noumikab31/" target = "_blank">Bitbucket</a></h4>  
+                        </li>
+                        <li>
+                            <h4 style = "padding-bottom: 10px;"><a href = "#blog">Blog<br/><span style = "color: darkorange; font-weight: bold;">(Coming Soon!)</span></a></h4>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main column -->
+                <div class = "col-sm-8 maincolumn" id = "maincolumn">
+                    <div id = "about">
+                        <!-- Main Heading -->
+                        <h1 style = "font-weight: bold; padding: 10px;background-color: #EBF7E3; color: #1B3409;">Noumika Balaji</h1>
+                        <!-- My profile picture -->
+                        <img style="float:left; margin-right: 10px; margin-bottom: 10px; border: lightgray; border-style: solid;" src="img/nb_3.jpg" alt="Noumika Balaji">
+                        <h2 style="padding-bottom: 10px; text-align: justify;">Hello and welcome to my web page! </h2>                            <h4 style = "padding-bottom: 10px; text-align: justify;">This page can be considered an online version of my resume. Here, you will find information about me, the projects I have done, my skill-set and interests, contact information and links to connecting with me on social media LinkedIn, Twitter) along with links to my GitHub and Bitbucket accounts.</h4>
+                        <h4 style = "padding-bottom: 10px; text-align: justify;">I received my Bachelor's degree in Electronics and Computer Engineering and am now a Computer Science graduate student at the University of Texas at Dallas. Although I am specializing in the Data Science track, Application Development (both web and mobile) is my primary area of interest.</h4>
+                        <h4 style = "padding-bottom: 10px; text-align: justify;">Through my Master's degree, my goal is to learn the necessary skills and technologies through which I can work on solutions to problems that we face everyday. Making applications of utility is my prime interest. Android has made me realize that the power of having an app in my hands can literally revolutionize the way I think, eat, sleep, live, work and enjoy. At present, I am an Android Development intern at Estech Systems, Inc. (ESI), a SIP-based telephony product company located in Dallas.</h4>
+                        <h4 style = "padding: 5px; text-align: justify; background-color: #EBF7E3"><b>TECHNICAL SKILLS:</b></h4>
+                        <h4 style = "padding-bottom: 5px; text-align: justify;"><b>Programming Languages:</b> Java, C, C#, Python, R, SQL</h4>
+                        <h4 style = "padding-bottom: 5px; text-align: justify;"><b>Web:</b> HTML5, CSS3, JavaScript, Bootstrap 4</h4>
+                        <h4 style = "padding-bottom: 5px; text-align: justify;"><b>IDE:</b> Visual Studio with Xamarin, Android Studio, IntelliJ IDEA, RStudio, Eclipse, StarUML, Rhapsody, XCode</h4>
+                        <h4 style = "padding-bottom: 5px; text-align: justify;"><b>Project Management | Version Control:</b> JIRA, Bitbucket, GitHub | Git</h4>
+                    </div>
+                    <hr>
+                    <div id = "projects">
+                        <h1 style = "font-weight: bold; padding: 10px; background-color: #EBF7E3">Projects</h1>
+                        <h4 style = "text-align: justify;">1. Android Projects:</h4>
+                        <ul class = "androidp" style = "padding-bottom: 5px; text-align: justify;">
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Pedometer</b></h4>
+                                <h4>'Pedometer' is an app that shows the number of steps and distance covered in one event, using the accelerometer of the phone.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Illuminating India</b></h4>
+                                <h4>'Illuminating India' is an app that provides details of places of interest, transportation, accommodation, local cuisines, hospitals, police stations and the nearest consulate, for the top five tourist places in India.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>BioInf</b></h4>
+                                <h4>'BioInf' is an app that helps find the complement of a DNA sequence, DNA to RNA conversion and locating the 'conserved' regions between two DNA sequences.</h4>
+                            </li>
+                        </ul>
+                        <h4 style = "text-align: justify;">2. Machine Learning Projects:</h4>
+                        <ul class = "machinelearningp" style = "padding-bottom: 5px; text-align: justify;">
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Keystroke Biometrics for Secure Banking</b></h4>
+                                <h4 style = "padding-bottom: 2px;">- Implemented the IEEE paper: Kevin S. Killourhy, Roy A. Maxion, <b><i>"Comparing Anomaly-Detection Algorithms for Keystroke Dynamics</i></b>, IEEE conference on Dependable Systems & Networks, July 2009.</h4>
+                                <h4 style = "padding-bottom: 2px;">- Three learning models (One Class SVM, Manhattan Distance, Gaussian Mixture Model) to predict impostors and genuine users, based on the CMU Keystroke Dynamics Benchmark Dataset, were implemented.</h4>
+                                <h4 style = "padding-bottom: 2px;">- The most efficient of the 3 models was predicted by studying the equal error rate of each model.</h4>
+                            </li>
+                        </ul>
+                        <h4 style = "text-align: justify;">3. R Projects (Statistical Analysis):</h4>
+                        <ul class = "rp" style = "padding-bottom: 5px; text-align: justify;">
+                            <li>
+                                <h4 style = "padding-bottom: 2px;">Analyze the correlation between murder rate and variables like poverty, unemployment, region, etc.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "padding-bottom: 2px;">Study the relationship between body temperature and heart rate and their dependence on gender.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "padding-bottom: 2px;">Analyze the dependency of singers' vocal chords on their heights.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "padding-bottom: 2px;">Predict the market price of a house based on various factors.</h4>
+                            </li>
+                        </ul>
+                        <h4 style = "text-align: justify;">4. C# Projects:</h4>
+                        <ul class = "csharpp" style = "padding-bottom: 10px; text-align: justify;">
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Multithreaded Text Search</b></h4>
+                                <h4>'Multithreaded Text Search' is an app that searches for a word/words/phrase (search term) dynamically while reading the source document and shows the number of occurrences of the search term and their individual occurrences with line numbers.</h4>
+                            </li>
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Rebate Form</b></h4>
+                                <h4>This is a typical WinForm that processes Rebate.</h4>
+                            </li>
+                        </ul>
+                        <h4 style = "text-align: justify;">5. Integrated Projects:</h4>
+                        <ul class = "ip" style = "padding-bottom: 10px; text-align: justify;">
+                            <li>
+                                <h4 style = "font-size: 22px;"><b>Device Battery Defender</b></h4>
+                                <h4 style = "padding-bottom: 5px;">- 'Device Battery Defender' is an integrated project in which an Arduino module integrated with an Android app, via Bluetooth, cuts off power supply to a phone once it is fully charged.</h4>
+                                <h4>- The app tracks the phone's battery level and once it is fully charged, it signals to the Arduino to divert the power supply from the phone to a secondary device that can be connected in the circuit to be charged.</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="clear"></p>
+                    <hr>
+                    <div id = "contact">
+                        <h1 style = "font-weight: bold; padding: 10px; background-color: #EBF7E3">Contact</h1>
+                        <h4>You can reach out to me in the following ways:</h4>
+                        <ul>
+                            <li>
+                                <h4><a href = "mailto:noumika.balaji@outlook.com">Email</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href = "https://linkedin.com/in/noumikabalaji">LinkedIn</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href = "https://twitter.com/noumika_balaji">Twitter</a></h4>
+                            </li>
+                        </ul>
+                        <h4>Or simply click the links on the left.</h4>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class = "col-sm-2 sidenavright" id = "sidenavright">
+                    <h2 style = "text-align: center; padding: 10px;">Ongoing certifications</h2><br/>
+                    <div class="certifications">
+                        <img id = "android" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px" src="img/androiddev.jpg" alt="Associate Android Developer Certification">
+                        <p><b>Certification: </b><br/><a href="https://developers.google.com/training/certification/associate-android-developer/">Associate Android Developer</a><br/><b>Offered by: </b>Google</p>
+                    </div>
+                    <hr>
+                    <div class="certifications">
+                        <img id = "fullstack" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px" src="img/mobileweb.jpg" alt="Full Stack Web and Multiplatform Mobile App Development">
+                        <p><b>Certification: </b><br/><a href="https://www.coursera.org/specializations/full-stack-mobile-app-development">Full Stack Web and Multiplatform Mobile App Development Specialization</a><br/><b>Offered by: </b>The Hong Kong University of Science and Technology <br/>(Platform: Coursera)</p>
+                    </div>
+                    <hr>
+                    <div class = "certifications">
+                        <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px" src="img/algorithms.jpg" alt="Algorithms Specialization">
+                        <p><b>Certification: </b><br/><a href = "https://www.coursera.org/specializations/algorithms">Algorithms Specialization</a><br/><b>Offered by: </b> Stanford University<br/>(Platform: Coursera)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Element 3: Footer -->
+        <footer>
+            <div class="footer">
+                <p><b>Noumika Balaji <a href = "https://utdallas.edu/~nxb170830">(URL: utdallas.edu/~nxb170830)</a></b></p>
+            </div>
+        </footer>
+    </body>
+</html>
